@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usman's Self-Evaluation Form</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Animated Title -->
+        <div class="title-section">
+            <h1 id="animated-title"></h1>
+        </div>
+
+        <!-- Intro Text -->
+        <div class="intro-text">
+            <p>This form is for my personal improvement as a student and Class Representative.<br>
+            Your feedback is anonymous (if you choose) and will be taken with respect.</p>
+        </div>
+
+        <!-- Main Form -->
+        <div class="form-wrapper">
+            <div class="flip-card__inner">
+                <div class="flip-card__front">
+                    <form id="evaluation-form" class="flip-card__form">
+                        
+                        <!-- Anonymous Toggle -->
+                        <div class="anonymous-toggle">
+                            <label class="switch">
+                                <input type="checkbox" id="anonymous-toggle" class="toggle">
+                                <span class="slider"></span>
+                                <span class="card-side"></span>
+                            </label>
+                            <span class="toggle-text">Submit anonymously</span>
+                        </div>
+
+                        <!-- Name Field (conditionally shown) -->
+                        <div id="name-field" class="wave-group">
+                            <input type="text" class="input" id="student-name">
+                            <span class="bar"></span>
+                            <label class="label">
+                                <span class="label-char" style="--index: 0">N</span>
+                                <span class="label-char" style="--index: 1">a</span>
+                                <span class="label-char" style="--index: 2">m</span>
+                                <span class="label-char" style="--index: 3">e</span>
+                            </label>
+                        </div>
+
+                        <!-- Q1: Respect -->
+                        <div class="question-block">
+                            <p class="question-text">At any point, did you feel I was disrespectful towards you?</p>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q1" value="yes">
+                                    <span>Yes</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q1" value="no">
+                                    <span>No</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q1" value="maybe">
+                                    <span>Maybe</span>
+                                </label>
+                            </div>
+                            <div id="q1-followup" class="followup-section" style="display: none;">
+                                <p class="apology-text">😔 I am genuinely sorry for that.</p>
+                                <div class="wave-group">
+                                    <input type="text" class="input" id="q1-detail">
+                                    <span class="bar"></span>
+                                    <label class="label">
+                                        <span class="label-char" style="--index: 0">I</span>
+                                        <span class="label-char" style="--index: 1">f</span>
+                                        <span class="label-char" style="--index: 2"> </span>
+                                        <span class="label-char" style="--index: 3">y</span>
+                                        <span class="label-char" style="--index: 4">o</span>
+                                        <span class="label-char" style="--index: 5">u</span>
+                                        <span class="label-char" style="--index: 6"> </span>
+                                        <span class="label-char" style="--index: 7">a</span>
+                                        <span class="label-char" style="--index: 8">r</span>
+                                        <span class="label-char" style="--index: 9">e</span>
+                                        <span class="label-char" style="--index: 10"> </span>
+                                        <span class="label-char" style="--index: 11">c</span>
+                                        <span class="label-char" style="--index: 12">o</span>
+                                        <span class="label-char" style="--index: 13">m</span>
+                                        <span class="label-char" style="--index: 14">f</span>
+                                        <span class="label-char" style="--index: 15">o</span>
+                                        <span class="label-char" style="--index: 16">r</span>
+                                        <span class="label-char" style="--index: 17">t</span>
+                                        <span class="label-char" style="--index: 18">a</span>
+                                        <span class="label-char" style="--index: 19">b</span>
+                                        <span class="label-char" style="--index: 20">l</span>
+                                        <span class="label-char" style="--index: 21">e</span>
+                                        <span class="label-char" style="--index: 22">,</span>
+                                        <span class="label-char" style="--index: 23"> </span>
+                                        <span class="label-char" style="--index: 24">b</span>
+                                        <span class="label-char" style="--index: 25">r</span>
+                                        <span class="label-char" style="--index: 26">i</span>
+                                        <span class="label-char" style="--index: 27">e</span>
+                                        <span class="label-char" style="--index: 28">f</span>
+                                        <span class="label-char" style="--index: 29">l</span>
+                                        <span class="label-char" style="--index: 30">y</span>
+                                        <span class="label-char" style="--index: 31"> </span>
+                                        <span class="label-char" style="--index: 32">m</span>
+                                        <span class="label-char" style="--index: 33">e</span>
+                                        <span class="label-char" style="--index: 34">n</span>
+                                        <span class="label-char" style="--index: 35">t</span>
+                                        <span class="label-char" style="--index: 36">i</span>
+                                        <span class="label-char" style="--index: 37">o</span>
+                                        <span class="label-char" style="--index: 38">n</span>
+                                        <span class="label-char" style="--index: 39"> </span>
+                                        <span class="label-char" style="--index: 40">s</span>
+                                        <span class="label-char" style="--index: 41">i</span>
+                                        <span class="label-char" style="--index: 42">t</span>
+                                        <span class="label-char" style="--index: 43">u</span>
+                                        <span class="label-char" style="--index: 44">a</span>
+                                        <span class="label-char" style="--index: 45">t</span>
+                                        <span class="label-char" style="--index: 46">i</span>
+                                        <span class="label-char" style="--index: 47">o</span>
+                                        <span class="label-char" style="--index: 48">n</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q2: Limits & Boundaries -->
+                        <div class="question-block">
+                            <p class="question-text">At any point, did you feel I crossed professional or personal limits?</p>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q2" value="yes">
+                                    <span>Yes</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q2" value="no">
+                                    <span>No</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q2" value="maybe">
+                                    <span>Maybe</span>
+                                </label>
+                            </div>
+                            <div id="q2-followup" class="followup-section" style="display: none;">
+                                <div class="wave-group">
+                                    <input type="text" class="input" id="q2-detail">
+                                    <span class="bar"></span>
+                                    <label class="label">
+                                        <span class="label-char" style="--index: 0">W</span>
+                                        <span class="label-char" style="--index: 1">h</span>
+                                        <span class="label-char" style="--index: 2">a</span>
+                                        <span class="label-char" style="--index: 3">t</span>
+                                        <span class="label-char" style="--index: 4"> </span>
+                                        <span class="label-char" style="--index: 5">s</span>
+                                        <span class="label-char" style="--index: 6">h</span>
+                                        <span class="label-char" style="--index: 7">o</span>
+                                        <span class="label-char" style="--index: 8">u</span>
+                                        <span class="label-char" style="--index: 9">l</span>
+                                        <span class="label-char" style="--index: 10">d</span>
+                                        <span class="label-char" style="--index: 11"> </span>
+                                        <span class="label-char" style="--index: 12">I</span>
+                                        <span class="label-char" style="--index: 13"> </span>
+                                        <span class="label-char" style="--index: 14">b</span>
+                                        <span class="label-char" style="--index: 15">e</span>
+                                        <span class="label-char" style="--index: 16"> </span>
+                                        <span class="label-char" style="--index: 17">m</span>
+                                        <span class="label-char" style="--index: 18">o</span>
+                                        <span class="label-char" style="--index: 19">r</span>
+                                        <span class="label-char" style="--index: 20">e</span>
+                                        <span class="label-char" style="--index: 21"> </span>
+                                        <span class="label-char" style="--index: 22">c</span>
+                                        <span class="label-char" style="--index: 23">a</span>
+                                        <span class="label-char" style="--index: 24">r</span>
+                                        <span class="label-char" style="--index: 25">e</span>
+                                        <span class="label-char" style="--index: 26">f</span>
+                                        <span class="label-char" style="--index: 27">u</span>
+                                        <span class="label-char" style="--index: 28">l</span>
+                                        <span class="label-char" style="--index: 29"> </span>
+                                        <span class="label-char" style="--index: 30">a</span>
+                                        <span class="label-char" style="--index: 31">b</span>
+                                        <span class="label-char" style="--index: 32">o</span>
+                                        <span class="label-char" style="--index: 33">u</span>
+                                        <span class="label-char" style="--index: 34">t</span>
+                                        <span class="label-char" style="--index: 35">?</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q3: Role as CR -->
+                        <div class="question-block">
+                            <p class="question-text">As a Class Representative, how well do you feel I handled my responsibilities?</p>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q3" value="appropriately">
+                                    <span>Appropriately</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q3" value="mostly-fine">
+                                    <span>Mostly fine</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q3" value="needs-improvement">
+                                    <span>Needs improvement</span>
+                                </label>
+                            </div>
+                            <div id="q3-followup" class="followup-section" style="display: none;">
+                                <div class="wave-group">
+                                    <input type="text" class="input" id="q3-detail">
+                                    <span class="bar"></span>
+                                    <label class="label">
+                                        <span class="label-char" style="--index: 0">W</span>
+                                        <span class="label-char" style="--index: 1">h</span>
+                                        <span class="label-char" style="--index: 2">i</span>
+                                        <span class="label-char" style="--index: 3">c</span>
+                                        <span class="label-char" style="--index: 4">h</span>
+                                        <span class="label-char" style="--index: 5"> </span>
+                                        <span class="label-char" style="--index: 6">a</span>
+                                        <span class="label-char" style="--index: 7">r</span>
+                                        <span class="label-char" style="--index: 8">e</span>
+                                        <span class="label-char" style="--index: 9">a</span>
+                                        <span class="label-char" style="--index: 10"> </span>
+                                        <span class="label-char" style="--index: 11">s</span>
+                                        <span class="label-char" style="--index: 12">h</span>
+                                        <span class="label-char" style="--index: 13">o</span>
+                                        <span class="label-char" style="--index: 14">u</span>
+                                        <span class="label-char" style="--index: 15">l</span>
+                                        <span class="label-char" style="--index: 16">d</span>
+                                        <span class="label-char" style="--index: 17"> </span>
+                                        <span class="label-char" style="--index: 18">I</span>
+                                        <span class="label-char" style="--index: 19"> </span>
+                                        <span class="label-char" style="--index: 20">i</span>
+                                        <span class="label-char" style="--index: 21">m</span>
+                                        <span class="label-char" style="--index: 22">p</span>
+                                        <span class="label-char" style="--index: 23">r</span>
+                                        <span class="label-char" style="--index: 24">o</span>
+                                        <span class="label-char" style="--index: 25">v</span>
+                                        <span class="label-char" style="--index: 26">e</span>
+                                        <span class="label-char" style="--index: 27"> </span>
+                                        <span class="label-char" style="--index: 28">a</span>
+                                        <span class="label-char" style="--index: 29">s</span>
+                                        <span class="label-char" style="--index: 30"> </span>
+                                        <span class="label-char" style="--index: 31">C</span>
+                                        <span class="label-char" style="--index: 32">R</span>
+                                        <span class="label-char" style="--index: 33">?</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q4: Communication & Tone -->
+                        <div class="question-block">
+                            <p class="question-text">How would you describe my communication with you?</p>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q4" value="respectful">
+                                    <span>Respectful and clear</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q4" value="mostly-fine">
+                                    <span>Mostly fine</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q4" value="needs-improvement">
+                                    <span>Needs improvement</span>
+                                </label>
+                            </div>
+                            <div id="q4-followup" class="followup-section" style="display: none;">
+                                <div class="wave-group">
+                                    <input type="text" class="input" id="q4-detail">
+                                    <span class="bar"></span>
+                                    <label class="label">
+                                        <span class="label-char" style="--index: 0">W</span>
+                                        <span class="label-char" style="--index: 1">h</span>
+                                        <span class="label-char" style="--index: 2">a</span>
+                                        <span class="label-char" style="--index: 3">t</span>
+                                        <span class="label-char" style="--index: 4"> </span>
+                                        <span class="label-char" style="--index: 5">s</span>
+                                        <span class="label-char" style="--index: 6">h</span>
+                                        <span class="label-char" style="--index: 7">o</span>
+                                        <span class="label-char" style="--index: 8">u</span>
+                                        <span class="label-char" style="--index: 9">l</span>
+                                        <span class="label-char" style="--index: 10">d</span>
+                                        <span class="label-char" style="--index: 11"> </span>
+                                        <span class="label-char" style="--index: 12">I</span>
+                                        <span class="label-char" style="--index: 13"> </span>
+                                        <span class="label-char" style="--index: 14">i</span>
+                                        <span class="label-char" style="--index: 15">m</span>
+                                        <span class="label-char" style="--index: 16">p</span>
+                                        <span class="label-char" style="--index: 17">r</span>
+                                        <span class="label-char" style="--index: 18">o</span>
+                                        <span class="label-char" style="--index: 19">v</span>
+                                        <span class="label-char" style="--index: 20">e</span>
+                                        <span class="label-char" style="--index: 21">?</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q5: Strength -->
+                        <div class="question-block">
+                            <p class="question-text">One thing you feel I do well:</p>
+                            <div class="wave-group">
+                                <input type="text" class="input" id="q5-strength">
+                                <span class="bar"></span>
+                                <label class="label">
+                                    <span class="label-char" style="--index: 0">Y</span>
+                                    <span class="label-char" style="--index: 1">o</span>
+                                    <span class="label-char" style="--index: 2">u</span>
+                                    <span class="label-char" style="--index: 3">r</span>
+                                    <span class="label-char" style="--index: 4"> </span>
+                                    <span class="label-char" style="--index: 5">t</span>
+                                    <span class="label-char" style="--index: 6">h</span>
+                                    <span class="label-char" style="--index: 7">o</span>
+                                    <span class="label-char" style="--index: 8">u</span>
+                                    <span class="label-char" style="--index: 9">g</span>
+                                    <span class="label-char" style="--index: 10">h</span>
+                                    <span class="label-char" style="--index: 11">t</span>
+                                    <span class="label-char" style="--index: 12">s</span>
+                                    <span class="label-char" style="--index: 13">.</span>
+                                    <span class="label-char" style="--index: 14">.</span>
+                                    <span class="label-char" style="--index: 15">.</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Q6: Improvement -->
+                        <div class="question-block">
+                            <p class="question-text">One thing you feel I should avoid or change:</p>
+                            <div class="wave-group">
+                                <input type="text" class="input" id="q6-improvement">
+                                <span class="bar"></span>
+                                <label class="label">
+                                    <span class="label-char" style="--index: 0">Y</span>
+                                    <span class="label-char" style="--index: 1">o</span>
+                                    <span class="label-char" style="--index: 2">u</span>
+                                    <span class="label-char" style="--index: 3">r</span>
+                                    <span class="label-char" style="--index: 4"> </span>
+                                    <span class="label-char" style="--index: 5">t</span>
+                                    <span class="label-char" style="--index: 6">h</span>
+                                    <span class="label-char" style="--index: 7">o</span>
+                                    <span class="label-char" style="--index: 8">u</span>
+                                    <span class="label-char" style="--index: 9">g</span>
+                                    <span class="label-char" style="--index: 10">h</span>
+                                    <span class="label-char" style="--index: 11">t</span>
+                                    <span class="label-char" style="--index: 12">s</span>
+                                    <span class="label-char" style="--index: 13">.</span>
+                                    <span class="label-char" style="--index: 14">.</span>
+                                    <span class="label-char" style="--index: 15">.</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Q7: Final Reflection -->
+                        <div class="question-block">
+                            <p class="question-text">Any advice or message you would like to give me for personal improvement?</p>
+                            <textarea id="q7-advice" class="textarea-input" placeholder="Honest advice is welcome." rows="4"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="flip-card__btn">Submit Feedback</button>
+
+                        <!-- Footer Text -->
+                        <div class="footer-text">
+                            <p>Thank you for your time.<br>
+                            I truly appreciate your honesty and guidance.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
